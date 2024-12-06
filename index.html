@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexora-GPT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #837298;
+            padding: 10px;
+        }
+        .logo {
+            height: 50px;
+        }
+        .side-btn {
+            background-color: #6200EA;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .side-btn:hover {
+            background-color: #3700B3;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px);
+        }
+        .card {
+            background-color: white#000000;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+        .card h2 {
+            color: #0D14D6;
+        }
+        .card p {
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+        .side-panel {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 300px;
+            height: 100%;
+            background-color: #6200EA;
+            color: white;
+            padding: 20px;
+            transition: right 0.3s ease;
+        }
+        .side-panel.open {
+            right: 0;
+        }
+        .close-btn {
+            background-color: #B388FF;
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+        section, nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+            padding: 56px;
+        }
+        .lo, .no {
+            height: 85px;
+            margin: 0 60px;
+        }
+        .image-title {
+            color: white;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .image-grid {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .image-grid div {
+            text-align: center;
+            margin: 0 10px;
+        }
+        .image-grid img {
+            height: 130px;
+            width: 130px;
+            border-radius: 10px;
+        }
+        h3{
+          color: #FFFFFF;
+          text-align: center ;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="lo.png" alt="Logo 1" class="logo">
+    <button class="side-btn" onclick="toggleSidePanel()">彡</button>
+</header>
+
+<section>
+    <div>
+        <a href="index.html"><img src="6.png" alt="Logo 1" class="lo"></a>
+        <p class="image-title">chatRPT</p>
+    </div>
+    <div>
+        <a href="innovator.html"><img src="8.png" alt="Logo 2" class="lo"></a>
+        <p class="image-title">Innovator™</p>
+    </div>
+</section>
+
+<nav>
+    <div>
+        <a href=""><img src="5.png" alt="Logo 1" class="no"></a>
+        <p class="image-title">Deep intell</p>
+    </div>
+    <div>
+        <a href=""><img src="7.png" alt="Logo 2" class="no"></a>
+        <p class="image-title">technique</p>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h2>About Nexora-GPT</h2>
+        <p>
+            Nexora-GPT is a cutting-edge AI platform offering a range of advanced features, from natural language processing to real-time data analytics. It's designed to deliver intelligent, seamless, and interactive experiences.
+        </p>
+    </div>
+
+    <div class="image-grid">
+        <div>
+            <img src="P.png" alt="Image 1">
+        </div>
+        <div>
+            <img src="J.png" alt="Image 2">
+        </div>
+        <div>
+            <img src="Z.png" alt="Image 3">
+            
+        </div>
+    </div>
+</div>
+
+<div class="side-panel" id="side-panel">
+    <button class="close-btn" onclick="toggleSidePanel()">Close</button>
+    <h2>Side Panel</h2>
+    <p>This is a side panel where you can add additional information or navigation links.</p>
+</div>
+
+<script>
+    function toggleSidePanel() {
+        const sidePanel = document.getElementById('side-panel');
+        sidePanel.classList.toggle('open');
+    }
+</script>
+
+
+<div><h3>by Yassine aariach ™</h3></div>
+</body>
+</html>
